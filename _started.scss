@@ -1,0 +1,34 @@
+.started{
+   max-width: 900px;
+   background-color: #fbfbfb;
+   margin: 100px auto 70px;
+   border-radius: 30px;
+   position: relative;
+   padding: 60px 30px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   position: relative;
+   &-heading{
+      margin-bottom: 30px;
+   }
+   &-desc{
+      max-width: 245px;
+      margin-bottom: 50px;
+      color: $gray-dark;
+   }
+   &-caption{
+      margin-bottom: 20px;
+   }
+   &-comment{
+      position: absolute;
+      bottom: 50px;
+      left: 50px;
+   }
+   &-smile{
+      position: absolute;
+      top: 0;right: 0;
+      transform: translate(50% , -50%);
+   }
+}

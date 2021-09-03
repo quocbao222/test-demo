@@ -1,0 +1,132 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ 
+ body {
+   overflow-x: hidden;
+ }
+ 
+ img {
+   display: block;
+   max-width: 100%;
+ }
+ 
+ a {
+   text-decoration: none;
+ }
+ 
+ ul {
+   list-style: none;
+ }
+ 
+ body {
+   font-family: "Poppins", sans-serif;
+   font-size: 16px;
+   line-height: 1;
+   color: $gray-dark;
+ }
+//button
+.button{
+  display: inline-block;
+  font-size: 16px;
+  color: $gray-dark;
+  padding: 20px 45px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  line-height: normal;
+  transition: all 0.2s linear;
+  &--primary{
+    background-color: $primary-color;
+    color: white;
+  }
+  &--outline{
+    border: 1px solid ;
+    color: $gray-blur;
+  }
+}
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container{
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.block{
+  text-align: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  margin-bottom: 85px;
+  &-caption{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    position: relative;
+    padding: 0 10px;
+    color: $gray;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &-caption::before{
+    left: 0;
+    transform: translateX(-100%) translateY(-50%);
+  }
+  &-caption::after{
+    right: 0;
+    transform: translateX(100%) translateY(-50%);
+  }
+  &-caption::before,
+  &-caption::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    background-color: $primary-color;
+    top: 50%;
+    
+  }
+  &-caption--left{
+    padding-left: 40px;
+    margin-bottom: 30px;
+  }
+  &-caption--left::after{
+    display: none;
+  }
+  &-caption--left::before{
+    transform: none;
+  }
+  &-heading {
+    font-size: 50px;
+    line-height: 1.4;
+    font-weight: 600;
+    span{
+      display: block ;
+    }
+  }
+}
+.text{
+  font-weight: 300;
+  color: $gray;
+  line-height: 1.6;
+}
+.logo{
+  display: inline-block;
+}
+.bg{
+  &--google{
+    background-color: #ff7879;
+  }
+  &--twitter{
+    background-color: #79afff;
+  }
+  &--instagram{
+    background-color: #ffb979;
+  }
+}
+
